@@ -1,71 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مدبّر | إدارة أموالك بذكاء</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="dashboard">
-      <!--flex-->
-      <!-- Side Bar -->
-      <div class="side_bar">
-        <!-- flex.col -->
-        <div class="logo_title">
-          <div class="logo">
-            <img src="images/icons/coins-solid-full.png" alt="page logo" />
-          </div>
-          <div class="title">
-            <h1>مدبّر</h1>
-            <span>إدارة أموالك بذكاء</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مدبّر | إدارة أموالك بذكاء</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="dashboard">
+    <div class="side_bar">
+      <div class="logo_title">
+        <div class="logo">
+          <img src="images/icons/coins-solid-full.png" alt="page logo" />
         </div>
-        <div class="links_bar">
-          <div class="main_links">
-            <ul>
-              <li class="active_sidebar"><i class="fa-solid fa-house "> </i>الصفحة الرئيسية</li>
-              <li><i class="fa-solid fa-right-left"></i> المعاملات</li>
-              <li><i class="fa-solid fa-chart-pie"></i> الميزانيات</li>
-              <li><i class="fa-solid fa-piggy-bank"></i>المدخرات</li>
-              <li>
-                <i class="fa-solid fa-file-invoice-dollar"></i>الفواتير الشهرية
-              </li>
-            </ul>
-          </div>
-          <span> إجراءات سريعة </span>
-          <div class="speed_links">
-            <ul>
-              <li>
-                <i class="fa-solid fa-paper-plane text-blue-600"></i>إرسال أموال
-              </li>
-              <li><i class="fa-solid fa-plus"></i>إضافة أموال</li>
-              <li>
-                <i class="fa-solid fa-receipt text-purple-600"></i>دفع فاتورة
-              </li>
-              <li>
-                <i class="fa-solid fa-chart-line text-orange-600"></i>استثمار
-              </li>
-            </ul>
+        <div class="title">
+          <h1>مدبّر</h1>
+          <span>إدارة أموالك بذكاء</span>
+        </div>
+      </div>
+      <div class="links_bar">
+        <div class="main_links">
+          <ul>
+            <li class="active_sidebar"><i class="fa-solid fa-house "> </i>الصفحة الرئيسية</li>
+            <li><i class="fa-solid fa-right-left"></i> المعاملات</li>
+            <li><i class="fa-solid fa-chart-pie"></i> الميزانيات</li>
+            <li><i class="fa-solid fa-piggy-bank"></i>المدخرات</li>
+            <li>
+              <i class="fa-solid fa-file-invoice-dollar"></i>الفواتير الشهرية
+            </li>
+          </ul>
+        </div>
+        <span> إجراءات سريعة </span>
+        <div class="speed_links">
+          <ul>
+            <li>
+              <i class="fa-solid fa-paper-plane text-blue-600"></i>إرسال أموال
+            </li>
+            <li><i class="fa-solid fa-plus"></i>إضافة أموال</li>
+            <li>
+              <i class="fa-solid fa-receipt text-purple-600"></i>دفع فاتورة
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-line text-orange-600"></i>استثمار
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_content">
+    <div class="navbar">
+      <div class="logo_title">
+        <div class="logo">
+          <img src="images/icons/coins-solid-full.png" alt="page logo" />
+        </div>
+        <div class="title">
+          <h1>مدبّر</h1>
+          <span>إدارة أموالك بذكاء</span>
+        </div>
+        <div class="connected">
+          <span>
+            <i class="fa-solid fa-circle"></i>
+            متصل
+          </span>
+        </div>
+      </div>
+      <div class="navbar_actions">
+        <div class="notification_icon">
+          <i class="fa-solid fa-search "></i>
+        </div>
+        <div class="notification_icon">
+          <i class="fa-regular fa-bell"></i>
+          <span class="notification_badge">2</span>
+        </div>
+
+
+        <div class="user_profile">
+
+          <div class="user_image">
+            <img src="images/avatar-1.jpg" alt="user profile" />
+            <div class="user_title">
+              <p>سيف أسامة</p>
+              <span>حساب مميز</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="main_content">
-      <!--flex-->
-      <div class="navbar"></div>
-    </div>
-  </body>
+    <div class="content_area">
+      <div class="balance_cards">
+        <div class="balance_card balance_main">
+          <div class="card_header">
+            <span class="card_label">الرصيد الحالي</span>
+          </div>
+          <h2 class="balance_amount">8,450 جنيه</h2>
+          <div class="balance_change positive">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>2.5%+</span>
+          </div>
+        </div>
+
+        <div class="balance_card balance_total">
+          <div class="card_header">
+            <span class="card_label">الدخل</span>
+          </div>
+          <h2 class="balance_amount">15,000 جنيه</h2>
+          <div class="balance_change positive">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>8.2%+</span>
+          </div>
+        </div>
+
+        <div class="balance_card balance_expenses">
+          <div class="card_header">
+            <span class="card_label">المصروفات</span>
+          </div>
+          <h2 class="balance_amount">10,000 جنيه</h2>
+          <div class="balance_change negative">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span>1.2%-</span>
+          </div>
+        </div>
+      </div> 
+
+
+
+
+
+
+    </div> 
+</body>
+
 </html>
