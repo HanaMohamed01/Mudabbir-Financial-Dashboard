@@ -10,6 +10,13 @@ body {
   margin: 0;
 }
 
+.active_sidebar{
+  color:#2153ff ;
+  background-color: #eff6ff;
+  padding-inline: 15px;
+  border-radius: 10px;
+}
+
 .dashboard .side_bar .logo_title .logo img {
   width: 100%;
 }
@@ -25,15 +32,20 @@ body {
   margin: 0;
 }
 
+.dashboard .side_bar .logo_title .title span {
+  font-size: 14px;
+}
+
 .dashboard .side_bar {
   background-color: #ffffff;
   position: fixed;
-  padding: 20px;
+  padding: 10px;
   height: 100vh;
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 15px -3px rgb(212, 202, 202);
   width: 17%;
+  overflow-y: auto;
 }
 
 .dashboard .side_bar .logo_title .logo {
@@ -44,9 +56,54 @@ body {
   height: 25px;
   margin-left: 10px;
   box-sizing: content-box;
-  box-shadow: 2px 2px 5px rgb(91, 90, 90) ;
+  box-shadow: 2px 2px 5px rgb(91, 90, 90);
 }
 
-.dashboard .side_bar .links_bar .main_links ul ,.dashboard .side_bar .links_bar .speed_links ul{
+.dashboard .side_bar .links_bar .main_links ul,
+.dashboard .side_bar .links_bar .speed_links ul,
+.dashboard .side_bar .logo_title .title span,
+.side_bar .links_bar span {
+  color: #4b515c;
+}
+
+.dashboard .side_bar .links_bar .main_links ul,
+.dashboard .side_bar .links_bar .speed_links ul {
   list-style: none;
+  padding-right: 15px;
+}
+
+.dashboard .side_bar .links_bar .main_links ul li,
+.dashboard .side_bar .links_bar .speed_links ul li {
+  padding-block: 15px;
+  cursor: pointer;
+}
+
+.dashboard .side_bar .links_bar .main_links ul li i {
+  padding-left: 25px;
+}
+
+.dashboard .side_bar .links_bar .speed_links ul li i {
+  padding: 20px 15px 20px 28px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.dashboard .side_bar .links_bar .speed_links ul li:nth-child(1) i {
+  color: #1860fb;
+  background-color: #ebf3ff;
+}
+
+.dashboard .side_bar .links_bar .speed_links ul li:nth-child(2) i {
+  color: #0ca74a;
+  background-color: #e6faee;
+}
+
+.dashboard .side_bar .links_bar .speed_links ul li:nth-child(3) i {
+  color: #9f14fd;
+  background-color: #f8edfe;
+}
+
+.dashboard .side_bar .links_bar .speed_links ul li:nth-child(4) i {
+  color: #f37c4a;
+  background-color: #fef0e7;
 }
