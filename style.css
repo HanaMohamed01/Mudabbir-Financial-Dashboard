@@ -303,14 +303,13 @@ body {
   padding: 20px;
 }
 
-/* === الأنشطة === */
 .recent_activities h3,
 .monthly_bills h3,
 .transactions h3 {
   font-size: 19px;
   margin-bottom: 15px;
   color: #333;
-  margin:0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .transactions .transaction_row {
@@ -331,16 +330,19 @@ body {
   gap: 10px;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
 }
 
 .activity i {
   font-size: 22px;
   padding: 10px;
   border-radius: 50%;
+  margin-left: 15px;
 }
 
 .activity.blue_box {
   background: #f0f6ff;
+  border-left: 3px solid #1d68f2;
 }
 
 .activity.blue_box i {
@@ -350,6 +352,7 @@ body {
 
 .activity.green_box {
   background: #eafcf1;
+  border-left: 3px solid #1bb66a;
 }
 
 .activity.green_box i {
@@ -371,6 +374,7 @@ body {
 .activity .text h4 {
   font-size: 15px;
   color: #111;
+  margin-bottom: 0;
 }
 
 .activity .text p {
@@ -383,7 +387,20 @@ body {
   color: gray;
 }
 
-/* === الفواتير === */
+.activity .text .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.activity .text .badge .green_badge {
+  color: #1bb66a;
+}
+
+.activity .text .badge .blue_badge {
+  color: #1d68f2;
+}
+
 .monthly_bills {
   text-align: center;
   flex: 1;
@@ -399,7 +416,6 @@ body {
   font-size: 16px;
 }
 
-/* make the bills area a two-column grid with consistent gaps */
 .bills_grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -409,7 +425,6 @@ body {
   flex-direction: row-reverse;
 }
 
-/* unified card style for each bill */
 .bill {
   background: #f8f8f9;
   border-radius: 12px;
@@ -424,7 +439,6 @@ body {
   transition: transform 0.14s ease, box-shadow 0.14s ease;
 }
 
-/* icon block */
 .bill i {
   display: inline-flex;
   align-items: center;
@@ -438,7 +452,6 @@ body {
   flex-shrink: 0;
 }
 
-/* right-aligned info for Arabic */
 .bill .info {
   text-align: center;
   display: flex;
@@ -468,29 +481,38 @@ body {
   font-weight: 600;
 }
 
-/* color variants for icons */
 .bill.electricity i {
-  background: rgba(255, 243, 205, 0.8);
   color: #f59e0b;
-  background: rgba(245, 158, 11, 0.08);
-}
-.bill.internet i {
-  background: rgba(219, 234, 254, 0.8);
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.06);
-}
-.bill.media i {
-  background: rgba(238, 242, 255, 0.8);
-  color: #7c3aed;
-  background: rgba(124, 58, 237, 0.06);
-}
-.bill.phone i {
-  background: rgba(220, 252, 231, 0.8);
-  color: #10b981;
-  background: rgba(16, 185, 129, 0.06);
+  background: #fef9c1;
 }
 
-/* === جدول المعاملات === */
+.bill.electricity span {
+  color: #e8905a;
+}
+
+.bill.internet i {
+  color: #2563eb;
+  background: #2563eb0f;
+}
+
+.bill.internet span {
+  color: #d45a7a;
+}
+
+.bill.media i {
+  color: #fa595f;
+  background: #ffe2e2;
+}
+
+.bill.phone i {
+  color: #10b981;
+  background: #10b77f0f;
+}
+
+.bill.phone span {
+  color: #34bc72;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -518,6 +540,42 @@ body {
 
 .transaction_row:hover {
   background: #f9faff;
+}
+
+.person .icon {
+  padding: 15px 15px 15px 30px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.res_icon i {
+  background-color: #fdefd4;
+  color: #ec4e0f;
+}
+
+.chart_icon i {
+  background-color: #dceafa;
+  color: #135fff;
+}
+
+.shell_icon i {
+  background-color: #ffe2e2;
+  color: #ea1a24;
+}
+
+.netflix_icon i {
+  background-color: #e0e7ff;
+  color: #523df6;
+}
+
+.fit_icon i {
+  background-color: #cefafe;
+  color: #0092b8;
+}
+
+.course_icon i {
+  background-color: #d0fae5;
+  color: #009966;
 }
 
 .person {

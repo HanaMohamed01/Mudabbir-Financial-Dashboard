@@ -138,13 +138,13 @@
         </div>
         <div class="layout">
           <div class="left_side">
-            <!-- الأنشطة الحديثة -->
             <div class="recent_activities card">
               <h3>الأنشطة الحديثة</h3>
               <div class="activity_list">
                 <div class="activity blue_box">
                   <i class="fa-solid fa-user-plus"></i>
                   <div class="text">
+                    <span class="badge blue_badge">حساب</span>
                     <h4>إضافة حساب توفير جديد</h4>
                     <p>تم إنشاء حساب توفير بنك النيل بنجاح</p>
                     <span>منذ ساعة واحدة</span>
@@ -154,6 +154,7 @@
                 <div class="activity green_box">
                   <i class="fa-solid fa-credit-card"></i>
                   <div class="text">
+                    <span class="badge green_badge">بطاقة</span>
                     <h4>إضافة بطاقة جديدة</h4>
                     <p>تمت إضافة بطاقة Visa الجديدة 2847****</p>
                     <span>منذ 3 ساعات</span>
@@ -165,14 +166,11 @@
                 <a href="#" class="view_all">عرض جميع الأنشطة (23)</a>
               </div>
             </div>
-
-            <!-- الفواتير الشهرية -->
             <div class="monthly_bills card">
               <h3>الفواتير الشهرية</h3>
               <h2>1920 <span>جنيه</span></h2>
               <p>إجمالى الفواتير الشهرية</p>
 
-              <!-- replaced nested containers with a single grid container -->
               <div class="bills_grid">
                 <div class="bill internet">
                   <i class="fa-solid fa-wifi"></i>
@@ -213,12 +211,11 @@
             </div>
           </div>
 
-          <!-- العمود الأيمن: المعاملات الأخيرة -->
           <div class="right_side">
             <div class="transactions card">
               <div class="header">
                 <h3>المعاملات الأخيرة</h3>
-                <a href="#" class="view_all">عرض الكل</a>
+                <a href="#" class="view_all">عرض الكل ></a>
               </div>
 
               <div class="transaction_header">
@@ -231,7 +228,7 @@
 
               <div class="transaction_row">
                 <div class="person">
-                  <img src="user1.jpg" alt="user" />
+                  <img src="images/avatar-2.jpg" alt="user" />
                   <div class="info">
                     <h4>محمود النيل</h4>
                     <p>تحويل أموال</p>
@@ -246,12 +243,11 @@
                 <div class="status complete">مكتمل</div>
                 <div class="amount plus">+350 جنيه</div>
               </div>
-
               <div class="transaction_row">
-                <div class="person">
-                  <img src="user2.jpg" alt="user" />
+                <div class="person res_icon">
+                  <i class="fa-solid fa-utensils icon"></i>
                   <div class="info">
-                    <h4>Meat moot</h4>
+                    <h4>مطعم Meat moot</h4>
                     <p>دفع مطعم</p>
                   </div>
                 </div>
@@ -262,12 +258,11 @@
                 </div>
                 <div class="date">14 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-2200 جنيه</div>
+                <div class="amount">-2200 جنيه</div>
               </div>
-
               <div class="transaction_row">
-                <div class="person">
-                  <img src="user3.jpg" alt="user" />
+                <div class="person chart_icon">
+                  <i class="fa-solid fa-shopping-cart icon"></i>
                   <div class="info">
                     <h4>Amazon</h4>
                     <p>تسوق إلكتروني</p>
@@ -280,14 +275,13 @@
                 </div>
                 <div class="date">13 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
+                <div class="amount">-1250 جنيه</div>
               </div>
-
               <div class="transaction_row">
                 <div class="person">
-                  <img src="user4.jpg" alt="user" />
+                  <img src="images/avatar-1.jpg" alt="user" />
                   <div class="info">
-                    <h4>Netflix</h4>
+                    <h4>عمر المهدي</h4>
                     <p>الاشتراك الشهري</p>
                   </div>
                 </div>
@@ -298,13 +292,13 @@
                 </div>
                 <div class="date">11 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-780 جنيه</div>
+                <div class="amount">-780 جنيه</div>
               </div>
               <div class="transaction_row">
                 <div class="person">
-                  <img src="user3.jpg" alt="user" />
+                  <img src="images/avatar-3.jpg" alt="user" />
                   <div class="info">
-                    <h4>Amazon</h4>
+                    <h4>محمد عوض</h4>
                     <p>تسوق إلكتروني</p>
                   </div>
                 </div>
@@ -315,13 +309,31 @@
                 </div>
                 <div class="date">13 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
+                <div class="amount plus">+1250 جنيه</div>
               </div>
               <div class="transaction_row">
-                <div class="person">
-                  <img src="user3.jpg" alt="user" />
+                <div class="person shell_icon">
+                  <i class="fa-solid fa-gas-pump icon"></i>
                   <div class="info">
-                    <h4>Amazon</h4>
+                    <h4>محطة وقود Shell</h4>
+                    <p>تحويل أموال</p>
+                  </div>
+                </div>
+                <div class="category">
+                  <span class="cat income"
+                    ><i class="fa-solid fa-arrow-down"></i> دخل</span
+                  >
+                </div>
+                <div class="date">13 أكتوبر 2025</div>
+                <div class="status complete">مكتمل</div>
+                <div class="amount">-1250 جنيه</div>
+              </div>
+              <div class="transaction_row">
+                <div class="person netflix_icon">
+                  <i class="fa-solid fa-film icon"></i>
+
+                  <div class="info">
+                    <h4>أشتراك Netflix</h4>
                     <p>تسوق إلكتروني</p>
                   </div>
                 </div>
@@ -330,60 +342,46 @@
                     ><i class="fa-solid fa-cart-shopping"></i> تسوق</span
                   >
                 </div>
-                <div class="date">13 أكتوبر 2025</div>
+                <div class="date">11 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
+                <div class="amount">-1250 جنيه</div>
               </div>
               <div class="transaction_row">
-                <div class="person">
-                  <img src="user3.jpg" alt="user" />
+                <div class="person fit_icon">
+                  <i class="fa-solid fa-dumbbell icon"></i>
+
                   <div class="info">
-                    <h4>Amazon</h4>
-                    <p>تسوق إلكتروني</p>
+                    <h4>نادي FitLife</h4>
+                    <p>الأشتراك الشهري</p>
                   </div>
                 </div>
                 <div class="category">
-                  <span class="cat shopping"
-                    ><i class="fa-solid fa-cart-shopping"></i> تسوق</span
+                  <span class="cat media"
+                    ><i class="fa-solid fa-tv"></i> ترفيه</span
                   >
                 </div>
-                <div class="date">13 أكتوبر 2025</div>
+                <div class="date">12 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
+                <div class="amount">-1250 جنيه</div>
               </div>
               <div class="transaction_row">
-                <div class="person">
-                  <img src="user3.jpg" alt="user" />
+                <div class="person course_icon">
+                  <i class="fa-solid fa-graduation-cap icon"></i>
+
                   <div class="info">
-                    <h4>Amazon</h4>
-                    <p>تسوق إلكتروني</p>
+                    <h4>كورس Jonas</h4>
+                    <p>دورة تدريبية</p>
                   </div>
                 </div>
                 <div class="category">
-                  <span class="cat shopping"
-                    ><i class="fa-solid fa-cart-shopping"></i> تسوق</span
+                  <span class="cat food">
+                    <i class="fa-solid fa-book w-3 h-3 ml-1"></i>
+                    تعليم</span
                   >
                 </div>
-                <div class="date">13 أكتوبر 2025</div>
+                <div class="date">10 أكتوبر 2025</div>
                 <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
-              </div>
-              <div class="transaction_row">
-                <div class="person">
-                  <img src="user3.jpg" alt="user" />
-                  <div class="info">
-                    <h4>Amazon</h4>
-                    <p>تسوق إلكتروني</p>
-                  </div>
-                </div>
-                <div class="category">
-                  <span class="cat shopping"
-                    ><i class="fa-solid fa-cart-shopping"></i> تسوق</span
-                  >
-                </div>
-                <div class="date">13 أكتوبر 2025</div>
-                <div class="status complete">مكتمل</div>
-                <div class="amount minus">-1250 جنيه</div>
+                <div class="amount">-1250 جنيه</div>
               </div>
             </div>
           </div>
