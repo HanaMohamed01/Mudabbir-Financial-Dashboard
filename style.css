@@ -36,6 +36,13 @@ body {
   font-size: 14px;
 }
 
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: flex-start;
+}
+
 .dashboard .side_bar {
   background-color: #ffffff;
   position: fixed;
@@ -271,4 +278,352 @@ body {
 
 .balance_change.negative {
   color: #ef4444;
+}
+
+.left_side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout {
+  display: flex;
+  gap: 15px;
+}
+
+.right_side {
+  flex: 1.7;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+/* === الأنشطة === */
+.recent_activities h3,
+.monthly_bills h3,
+.transactions h3 {
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: #333;
+  margin:0 0 20px 0;
+}
+
+.transactions .transaction_row {
+  margin: 10px;
+}
+
+.activity_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid rgb(230, 226, 226);
+  padding-bottom: 20px;
+}
+
+.activity {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.activity i {
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.activity.blue_box {
+  background: #f0f6ff;
+}
+
+.activity.blue_box i {
+  color: #1d68f2;
+  background: #e3edff;
+}
+
+.activity.green_box {
+  background: #eafcf1;
+}
+
+.activity.green_box i {
+  color: #1bb66a;
+  background: #d8f8e4;
+}
+
+.view_all {
+  text-decoration: none;
+  color: #1d68f2;
+  text-align: center;
+}
+
+.view {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.activity .text h4 {
+  font-size: 15px;
+  color: #111;
+}
+
+.activity .text p {
+  font-size: 13px;
+  color: #666;
+}
+
+.activity .text span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* === الفواتير === */
+.monthly_bills {
+  text-align: center;
+  flex: 1;
+}
+
+.monthly_bills h2 {
+  font-size: 26px;
+  margin: 5px 0;
+  color: #111;
+}
+
+.monthly_bills span {
+  font-size: 16px;
+}
+
+/* make the bills area a two-column grid with consistent gaps */
+.bills_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  margin-top: 12px;
+  flex-direction: row-reverse;
+}
+
+/* unified card style for each bill */
+.bill {
+  background: #f8f8f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(84, 87, 101, 0.04);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 100px;
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+
+/* icon block */
+.bill i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 20px;
+  background: rgba(29, 104, 242, 0.08);
+  color: #1d68f2;
+  flex-shrink: 0;
+}
+
+/* right-aligned info for Arabic */
+.bill .info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.bill .info h4 {
+  font-size: 15px;
+  margin: 0;
+  color: #111;
+  font-weight: 700;
+}
+
+.bill .info p {
+  font-size: 16px;
+  margin: 0;
+  color: #000;
+  font-weight: 800;
+}
+
+.bill .info span {
+  font-size: 12px;
+  color: #8b93a7;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+/* color variants for icons */
+.bill.electricity i {
+  background: rgba(255, 243, 205, 0.8);
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+.bill.internet i {
+  background: rgba(219, 234, 254, 0.8);
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.06);
+}
+.bill.media i {
+  background: rgba(238, 242, 255, 0.8);
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.06);
+}
+.bill.phone i {
+  background: rgba(220, 252, 231, 0.8);
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.06);
+}
+
+/* === جدول المعاملات === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.transaction_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
+}
+
+.transaction_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.transaction_row:hover {
+  background: #f9faff;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1.5;
+}
+
+.person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.person .info h4 {
+  font-size: 14px;
+  color: #222;
+}
+
+.person .info p {
+  font-size: 12px;
+  color: #777;
+}
+
+.category {
+  flex: 1;
+}
+
+.cat {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cat.income {
+  background: #e6faee;
+  color: #1bb66a;
+}
+
+.cat.food {
+  background: #fff0e6;
+  color: #f27a1a;
+}
+
+.cat.shopping {
+  background: #e8f1ff;
+  color: #1976f2;
+}
+
+.cat.media {
+  background: #f0e8ff;
+  color: #784ff2;
+}
+
+.date {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.status {
+  flex: 0.7;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+.status.complete {
+  background: #e7f8ec;
+  color: #1bb66a;
+}
+
+.amount {
+  flex: 0.7;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.amount.plus {
+  color: #1bb66a;
+}
+
+.amount.minus {
+  color: #f44336;
+}
+
+@media (max-width: 992px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .bills_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main_content {
+    padding: 16px;
+    grid-template-columns: 1fr;
+  }
 }
